@@ -1,7 +1,6 @@
 import React from "react";
 import { Actions } from "./Actions";
 import { Text } from "./HeroText";
-import { Lines } from "./Lines";
 import { motion } from "framer-motion";
 import { Card } from "./Card";
 
@@ -22,8 +21,7 @@ const item = {
 
 export const Hero = () => {
   return (
-    <div className="max-w-7xl flex relative min-h-screen mx-auto">
-      <Lines />
+    <div className="relative border-x">
       <div className="w-full">
         <div className="mt-32 mb-12">
           <motion.div
