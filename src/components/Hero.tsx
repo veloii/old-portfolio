@@ -21,7 +21,7 @@ const item = {
 
 export const Hero = () => {
   return (
-    <div className="relative border-x">
+    <div>
       <div className="w-full">
         <div className="mt-32 mb-12">
           <motion.div
