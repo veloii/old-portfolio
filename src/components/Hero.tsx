@@ -21,10 +21,10 @@ const item = {
 
 export const Hero = () => {
   return (
-    <div>
-      <div className="w-full">
-        <div className="mt-32 mb-12">
-          <motion.div
+    <div className="min-h-screen flex items-center">
+      <div>
+        <div className="mb-12">
+          {/* <motion.div
             initial={{ opacity: 0 }}
             animate={{
               opacity: 1,
@@ -39,7 +39,7 @@ export const Hero = () => {
             className="text-2xl -mt-12 italic w-full absolute font-black uppercase tracking-widest text-gray-600 px-10"
           >
             Hello I&lsquo;m zelr
-          </motion.div>
+          </motion.div> */}
 
           <Text />
         </div>

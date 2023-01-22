@@ -6,11 +6,13 @@ import { motion } from "framer-motion";
 
 export default function Home() {
   return (
-    <div className="max-w-7xl flex relative border-x min-h-screen mx-auto">
-      <div>
-        <Hero />
-        <Projects />
+    <>
+      <div className="max-w-7xl flex border-x min-h-screen mx-auto">
+        <div>
+          <Hero />
+          <Projects />
+        </div>
       </div>
-    </div>
+    </>
   );
 }
