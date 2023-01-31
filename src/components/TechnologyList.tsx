@@ -97,7 +97,7 @@ export const TechnologyList = () => {
         </motion.div>
         <motion.div
           variants={item}
-          className={`w-full p-4 ${
+          className={`w-full p-4 transition duration-500 ease-in-out ${
             randomRobloxGame && "scale-90 opacity-30 blur-sm"
           }`}
         >
