@@ -1,10 +1,12 @@
 import React from "react";
+import MyVirtualPet from "./MyVirtualPet";
 import UnifiedBookmarks from "./UnifiedBookmarks";
 
 export const Projects = () => {
   return (
-    <div className="pt-12">
+    <div>
       <UnifiedBookmarks />
+      <MyVirtualPet />
     </div>
   );
 };

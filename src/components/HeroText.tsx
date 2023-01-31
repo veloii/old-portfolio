@@ -30,7 +30,7 @@ export const Text = ({ className }: { className?: string }) => {
       }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className={`${className} relative w-[769px] group`}
+      className={`${className} relative w-[450px] sm:w-[550px] md:w-[650px] lg:w-[720px] group`}
     >
       <motion.div
         initial={{
@@ -47,13 +47,13 @@ export const Text = ({ className }: { className?: string }) => {
           duration: 0.5,
           ease: "easeInOut",
         }}
-        className="z-10 text-neutral-800 pointer-events-none absolute border-l border-l-rose-500 pl-8 w-full"
+        className="z-10 text-gray-100 pointer-events-none absolute border-l border-l-rose-500 pl-8 w-full"
       >
         <h1
           style={{
             WebkitFontSmoothing: "subpixel-antialiased",
           }}
-          className="text-8xl font-black leading-tight"
+          className="md:text-7xl sm:text-6xl text-5xl lg:text-8xl font-black lg:leading-tight leading-tight sm:leading-tight md:leading-tight"
         >
           I create apps and websites
         </h1>
@@ -75,7 +75,7 @@ export const Text = ({ className }: { className?: string }) => {
         }}
         className="z-10 text-white pointer-events-none absolute pl-8 w-full"
       >
-        <h1 className="text-8xl font-black leading-tight">
+        <h1 className="md:text-7xl sm:text-6xl text-5xl lg:text-8xl font-black lg:leading-tight leading-tight sm:leading-tight md:leading-tight">
           I create apps and websites
         </h1>
       </motion.div>
@@ -93,7 +93,7 @@ export const Text = ({ className }: { className?: string }) => {
           duration: 0.5,
           ease: "easeInOut",
         }}
-        className="h-64 w-full -mb-10 relative bottom-3 transition-all"
+        className="h-36 sm:h-40 md:h-48 lg:h-64 w-full -mb-10 relative bottom-3 transition-all"
         data-transition-in
         data-js-darken-top
       />
