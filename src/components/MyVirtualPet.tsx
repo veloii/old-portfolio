@@ -1,5 +1,6 @@
 import { CurrentProjectContext } from "@/context/CurrentProjectContext";
 import useOnScreen from "@/hooks/useOnScreen";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import React, { useContext, useEffect } from "react";
 import { useRef, useState } from "react";
@@ -14,7 +15,15 @@ export default function MyVirtualPet() {
   }, [isVisible]);
 
   return (
-    <div className="pb-64">
+    <motion.div
+      initial={{ opacity: 0, translateY: 32 }}
+      whileInView={{ opacity: 1, translateY: 0 }}
+      transition={{
+        duration: 0.75,
+        ease: "easeInOut",
+      }}
+      className="pb-64"
+    >
       <div className="pl-16 max-w-7xl mt-32 mx-auto bg-gray-800 bg-opacity-10 rounded-3xl border shadow-lg px-6 border-gray-800">
         <div className="mx-auto relative right-8 pt-8">
           <svg
@@ -97,6 +106,6 @@ export default function MyVirtualPet() {
           <div ref={ref}></div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
