@@ -19,7 +19,9 @@ const item = {
 };
 
 export const TechnologyList = () => {
-  const { myVirtualPet, unifiedBookmarks } = useContext(CurrentProjectContext);
+  const { myVirtualPet, unifiedBookmarks, randomRobloxGame } = useContext(
+    CurrentProjectContext
+  );
 
   return (
     <>
@@ -29,7 +31,11 @@ export const TechnologyList = () => {
         }}
         variants={container}
         initial="hidden"
-        animate={myVirtualPet || unifiedBookmarks ? "show" : "hidden"}
+        animate={
+          myVirtualPet || randomRobloxGame || unifiedBookmarks
+            ? "show"
+            : "hidden"
+        }
         className="w-96 fixed md:flex hidden right-0 z-20 h-screen justify-center pr-2 pl-32 flex-col pt-4"
       >
         <motion.div variants={item} className={`w-full p-4`}>
@@ -89,7 +95,12 @@ export const TechnologyList = () => {
             />
           </div>
         </motion.div>
-        <motion.div variants={item} className={`w-full p-4`}>
+        <motion.div
+          variants={item}
+          className={`w-full p-4 ${
+            randomRobloxGame && "scale-90 opacity-30 blur-sm"
+          }`}
+        >
           <Card
             image="prisma"
             color={"#0c344b"}

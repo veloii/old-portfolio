@@ -1,6 +1,8 @@
 import React, { createContext, useState } from "react";
 
 type CurrentProjectContextType = {
+  randomRobloxGame: boolean;
+  setRandomRobloxGame: (value: boolean) => void;
   myVirtualPet: boolean;
   setMyVirtualPet: (value: boolean) => void;
   unifiedBookmarks: boolean;
@@ -8,6 +10,8 @@ type CurrentProjectContextType = {
 };
 
 export const CurrentProjectContext = createContext<CurrentProjectContextType>({
+  randomRobloxGame: false,
+  setRandomRobloxGame: () => null,
   myVirtualPet: false,
   setMyVirtualPet: () => null,
   unifiedBookmarks: false,
@@ -21,11 +25,14 @@ export const CurrentProjectProvider = ({
 }) => {
   const [unifiedBookmarks, setUnifiedBookmarks] = useState<boolean>(false);
   const [myVirtualPet, setMyVirtualPet] = useState<boolean>(false);
+  const [randomRobloxGame, setRandomRobloxGame] = useState<boolean>(false);
 
   return (
     <CurrentProjectContext.Provider
       value={{
         unifiedBookmarks,
+        randomRobloxGame,
+        setRandomRobloxGame,
         setUnifiedBookmarks,
         myVirtualPet,
         setMyVirtualPet,
