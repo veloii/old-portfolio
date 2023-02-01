@@ -95,21 +95,22 @@ export const TechnologyList = () => {
             />
           </div>
         </motion.div>
-        <motion.div
-          variants={item}
-          className={`w-full p-4 transition duration-500 ease-in-out ${
-            randomRobloxGame && "scale-90 opacity-30 blur-sm"
-          }`}
-        >
-          <Card
-            image="prisma"
-            color={"#0c344b"}
-            className={"text-white"}
-            title={"Prisma"}
-            desc={
-              "Prisma is my goto ORM for the backend of an application. It provides an easy and good way to manage my databases."
-            }
-          />
+        <motion.div variants={item} className={`w-full p-4`}>
+          <div
+            className={`transition duration-500 ease-in-out ${
+              randomRobloxGame && "scale-90 opacity-30 blur-sm"
+            }`}
+          >
+            <Card
+              image="prisma"
+              color={"#0c344b"}
+              className={"text-white"}
+              title={"Prisma"}
+              desc={
+                "Prisma is my goto ORM for the backend of an application. It provides an easy and good way to manage my databases."
+              }
+            />
+          </div>
         </motion.div>
       </motion.div>
     </>
