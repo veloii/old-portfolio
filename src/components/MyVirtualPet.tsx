@@ -57,7 +57,7 @@ export default function MyVirtualPet() {
             />
           </svg>
 
-          <div className="space-y-2 absolute">
+          <div className="space-y-2">
             <h3 className="text-3xl uppercase border-l-4 pt-2 pl-4 tracking-widest font-black text-rose-300 border-l-rose-300">
               My Virtual Pet.
             </h3>
@@ -85,7 +85,7 @@ export default function MyVirtualPet() {
               </li>
             </ul>
           </div>
-          <div className={`flex gap-5 relative top-64`}>
+          {/* <div className={`flex gap-5 relative top-64`}>
             <Image
               src="/un-mobile.png"
               width={400}
@@ -102,7 +102,7 @@ export default function MyVirtualPet() {
               alt={""}
               draggable={false}
             />
-          </div>
+          </div> */}
           <div ref={ref}></div>
         </div>
       </div>

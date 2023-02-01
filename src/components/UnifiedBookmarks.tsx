@@ -62,9 +62,16 @@ export default function UnifiedBookmarks() {
             <h3 className="text-3xl uppercase border-l-4 pt-2 pl-4 tracking-widest font-black text-violet-300 border-l-violet-300">
               Unified Bookmarks.
             </h3>
+            <a
+              className="text-violet-300 hover:text-violet-400 border-l-4 pl-4 transition border-l-violet-300 ease-in-out duration-200"
+              href="https://unifiedbookmarks.com"
+            >
+              https://unifiedbookmarks.com
+            </a>
             <p className="text-xl font-bold max-w-3xl pt-3 leading-relaxed text-gray-200">
               Team-based bookmark sharing.
             </p>
+
             <ul className="space-y-1 pt-4 ">
               <li className="text-lg max-w-3xl leading-relaxed text-gray-300">
                 Google Chrome integration with{" "}

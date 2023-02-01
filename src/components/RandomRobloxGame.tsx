@@ -61,6 +61,12 @@ export default function RandomRobloxGame() {
             <h3 className="text-3xl uppercase border-l-4 pt-2 pl-4 tracking-widest font-black text-red-300 border-l-red-300">
               Random Roblox Game Generator.
             </h3>
+            <a
+              className="text-red-300 hover:text-red-400 border-l-4 pl-4 transition border-l-red-300 ease-in-out duration-200"
+              href="https://random-roblox-game.vercel.app"
+            >
+              https://random-roblox-game.vercel.app
+            </a>
             <p className="text-xl font-bold max-w-3xl pt-3 leading-relaxed text-gray-200">
               Can&apos;t decide on something to play?
             </p>
